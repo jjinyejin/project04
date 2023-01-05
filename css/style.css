@@ -1,0 +1,1295 @@
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    overflow-x: hidden;
+    width:100%;
+    height:100%;
+}
+a{text-decoration: none;}
+ul{list-style:none;}
+
+@media screen and (min-width:1024px){
+    #mainHeader{
+        padding:100px 60px 0 60px;
+        height:100%;
+        width:200px;
+        position:fixed;
+        z-index: 100;
+    }
+    #mainHeader:hover{
+        background:rgba(255, 255, 255, 0.4)
+    }
+
+    /*logo*/
+    #mainHeader #logo>h1{
+        margin-bottom:10px;
+    }
+    #mainHeader #logo>h1>a{
+        display:block;
+        font-family: 'RIDIBatang';
+        font-weight: normal;
+        font-size:50px;
+        color:black;
+    }
+    #mainHeader #logo>ul{
+        overflow:hidden;
+    }
+    #mainHeader #logo>ul>li{
+        float:left;
+        position:relative;
+    }
+    #mainHeader #logo>ul>li>a{
+        display:block;
+        font-family: 'GowunDodum-Regular';
+        padding:0 10px;
+        font-size:13px;
+        color:#000;
+    }
+    #mainHeader #logo>ul>li:first-child>a{
+        padding-left:0;
+    }
+    #mainHeader #logo>ul>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+    #mainHeader #logo>ul>li>a:after{
+        content:'';
+        position:absolute;
+        left:0;
+        top:5px;
+        background:#000;
+        height:12px;
+        width:1px;
+    }
+    #mainHeader #logo>ul>li:first-child>a:after{
+        width:0;
+    }
+
+    /*menubar*/
+    #menubar{display:none;}
+
+    /*mainNav*/
+    #mainHeader #mainNav{
+        margin-top:80px;
+    }
+    #mainHeader #mainNav>.menu{
+        margin-bottom:30px;
+    }
+    #mainHeader #mainNav>ul>li>a{
+        display:block;
+        font-size:14px;
+        color:#000;
+        padding:4px 0;
+        position:relative;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+    #mainHeader #mainNav>.menu>li>a:before{
+        content:'';
+        position:absolute;
+        background:rgb(0, 0, 0);
+        height:2px;
+        width:0;
+        bottom:0;
+        transition:0.7s;
+        left:0;
+        transform:translateX(0);
+    }
+    #mainHeader #mainNav>.menu>li>a:hover:before{
+        width:100%;
+    }
+    #mainHeader #mainNav>.login>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+    #mainHeader #mainNav>ul>li>ul{
+        display:none;
+        margin-left:8px;
+    }
+    #mainHeader #mainNav>ul>li>ul>li>a{
+        display:block;
+        font-size:13px;
+        color:#000;
+        padding:4px 0;
+    }
+    #mainHeader #mainNav>ul>li>ul>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+
+    /*mainNav-m*/
+    #mainNav-m{display:none;}
+
+    /*productOne*/
+    #productOne{
+        background:url('../images/mainBanner1.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productTwo*/
+    #productTwo{
+        background:url('../images/mainBanner4.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productThree*/
+    #productThree{
+        background:url('../images/mainBanner3.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    #productFore{
+        background:url('../images/mainBanner2.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*newProduct*/
+    #newProduct{
+        margin-left:320px;
+    }
+    #newProduct>h2{
+        text-align: center;
+    }
+    #newProduct>h2>span{
+        padding:50px 150px;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    /*swiper*/
+    #newProduct .swiper {
+        width: 100%;
+        height:100%;
+    }
+    #newProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #newProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #newProduct .newBox{
+        overflow:hidden;
+    }
+    #newProduct .newBox>.box{
+        float:left;
+        width:50%;
+    }
+    #newProduct .newBox>.newMain{
+        position:relative;
+    }
+    #newProduct .newBox>.newMain>.photo>a{
+        display:block;
+    }
+    #newProduct .newBox>.newMain>.content{
+        position:absolute;
+        left:0;
+        top:0;
+        width:100%;
+        height:100%;
+    }
+    #newProduct .newBox>.newMain>.content:hover{
+        background:rgba(0,0,0,0.3);
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox{
+        width:300px;
+        padding:50px;
+        position:absolute;
+        left:50%;
+        top:25%;
+        margin-left:-200px;
+        background:rgba(255, 255, 255, 0.4);
+        display:none;
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox>p>a{
+        display:block;
+        font-family: 'GowunDodum-Regular';
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox>p>a>.title{
+        font-size:20px;
+        color:#000;
+        font-weight: bold;
+        margin-bottom:30px;
+        display:block;
+        text-align: center;
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox>p>a>.price{
+        font-size:16px;
+        color:#000;
+        margin-bottom:15px;
+        text-align: right;
+        display:block;
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox>p>a>.color{
+        font-size:17px;
+        color:#000;
+        text-align: right;
+        display:block;
+        margin-bottom:40px;
+    }
+    #newProduct .newBox>.newMain>.content>.contentBox>.detail>a{
+        font-size:14px;
+        color:#000;
+        display:block;
+        line-height: 25px;
+    }
+    #newProduct .swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+        color:#000 !important;
+    }
+    #newProduct .swiper-button-next:after,
+    #newProduct .swiper-button-prev:after{
+        display:none;
+    }
+    #newProduct .swiper-button-prev{
+        background:url('../images/newarrow_left.png')no-repeat 0 0;
+        width:30px;
+        height:58px;
+        opacity:1;
+        left:30px;
+    }
+    #newProduct .swiper-button-next{
+        width:30px;
+        height:58px;
+        background:url('../images/newarrow_rightt.png')no-repeat 0 0;
+        opacity:1;
+        right:30px;
+    }
+
+    /*bestProduct*/
+    #bestProduct{
+        margin-left:320px;
+    }
+    #bestProduct>h2{
+        text-align: center;
+    }
+    #bestProduct>h2>span{
+        padding:50px 130px;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    #bestProduct .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+    #bestProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    #bestProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #bestProduct .best-swiper .bestBox>a{
+        display:block;
+    }
+    #bestProduct .best-swiper .bestBox>a:hover>img{
+        transform: scale(1.1);
+    }
+    #bestProduct .best-swiper .bestBox>a>img{
+        display:block;
+    }
+
+    /*mainFooter*/
+    #mainFooter{
+        overflow:hidden;
+        margin:30px 0;
+    }
+    #mainFooter>#footerLeft{
+        float:left;
+    }
+    #mainFooter>#footerLeft>ul>li>a{
+        display:block;
+        font-size:14px;
+        color: #000;
+        margin-left:60px;
+        padding:10px 0;
+    }
+    #mainFooter>#footerLeft>ul>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+    #mainFooter>#footerRight{
+        float:right;
+        margin-right:60px;
+        overflow:hidden;
+    }
+    #mainFooter>#footerRight>form{
+        float:right;
+    }
+    #mainFooter>#footerRight>form>input[type="search"]{
+        border:none;
+        border-bottom:1px solid #000;
+        width:200px;
+        padding:5px 10px;
+    }
+    #mainFooter>#footerRight>form>input[type="image"]{
+        width:20px;
+        vertical-align: middle;
+        margin-left:10px;
+    }
+    #mainFooter>#footerRight>.menu{
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:20px;
+        float:right;
+        clear: both;
+    }
+    #mainFooter>#footerRight>.menu>li{
+        float:left;
+    }
+    #mainFooter>#footerRight>.menu>li>a{
+        padding:0 10px;
+        display:block;
+        font-size:13px;
+        color: #000;
+    }
+    #mainFooter>#footerRight>.menu>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+    #mainFooter>#footerRight>.menu>li:first-child>a{
+        padding-left:0;
+    }
+    #mainFooter>#footerRight>.info{
+        float:right;
+        clear:both;
+    }
+    #mainFooter>#footerRight>.info>li>a{
+        display:block;
+        font-size:13px;
+        color: rgb(86, 86, 86);
+        line-height: 20px;
+        text-align: right;
+    }
+}
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    #mainHeader{
+        padding:60px 6% 0 6%;
+        height:100%;
+        width:200px;
+        position:fixed;
+    }
+
+    /*logo*/
+    #mainHeader #logo>h1{
+        margin-bottom:10px;
+    }
+    #mainHeader #logo>h1>a{
+        display:block;
+        font-family: 'RIDIBatang';
+        font-weight: normal;
+        font-size:50px;
+        color:black;
+    }
+    #mainHeader #logo>ul{
+        overflow:hidden;
+    }
+    #mainHeader #logo>ul>li{
+        float:left;
+        position:relative;
+    }
+    #mainHeader #logo>ul>li>a{
+        display:block;
+        font-family: 'GowunDodum-Regular';
+        padding:0 10px;
+        font-size:15px;
+        color:#000;
+    }
+    #mainHeader #logo>ul>li:first-child>a{
+        padding-left:0;
+    }
+    #mainHeader #logo>ul>li>a:after{
+        content:'';
+        position:absolute;
+        left:0;
+        top:5px;
+        background:#000;
+        height:12px;
+        width:1px;
+    }
+    #mainHeader #logo>ul>li:first-child>a:after{
+        width:0;
+    }
+
+    /*menubar*/
+    #menubar{display:none;}
+
+    /*mainNav*/
+    #mainHeader #mainNav{
+        margin-top:80px;
+    }
+    #mainHeader #mainNav>.menu{
+        margin-bottom:30px;
+    }
+    #mainHeader #mainNav>ul>li>a{
+        display:block;
+        font-size:15px;
+        color:#000;
+        padding:4px 0;
+        position:relative;
+    }
+    #mainHeader #mainNav>.menu>li>a:before{
+        content:'';
+        position:absolute;
+        background:rgb(0, 0, 0);
+        height:2px;
+        width:0;
+        bottom:0;
+        transition:0.7s;
+        left:0;
+        transform:translateX(0);
+    }
+    #mainHeader #mainNav>.menu>li>a:hover:before{
+        width:100%;
+    }
+    #mainHeader #mainNav>ul>li>ul{
+        display:none;
+        margin-left:8px;
+    }
+    #mainHeader #mainNav>ul>li>ul>li>a{
+        display:block;
+        font-size:14px;
+        color:#000;
+        padding:4px 0;
+    }
+
+
+
+    /*fixed*/
+    /*
+    #mainHeader.fixed{
+        padding:30px 8% 0 8%;
+        width:84%;
+        position:fixed;
+        z-index: 100;
+        height:10%;
+    }*/
+
+    /*logo*/
+    /*
+    #mainHeader.fixed #logo{
+        float:left;
+        width:60%;
+    }
+    #mainHeader.fixed #logo>h1>a{
+        display:block;
+        font-family: 'Daehan-Bold';
+        font-size:25px;
+        color:black;
+    }
+    #mainHeader.fixed #logo>ul{
+        overflow:hidden;
+    }
+    #mainHeader.fixed #logo>ul>li{
+        float:left;
+        position:relative;
+    }
+    #mainHeader.fixed #logo>ul>li>a{
+        display:block;
+        font-family: 'GowunDodum-Regular';
+        padding:0 10px;
+        font-size:13px;
+        color:#000;
+    }
+    #mainHeader.fixed #logo>ul>li:first-child>a{
+        padding-left:0;
+    }
+    #mainHeader.fixed #logo>ul>li>a:after{
+        content:'';
+        position:absolute;
+        left:0;
+        top:5px;
+        background:#000;
+        height:12px;
+        width:1px;
+    }
+    #mainHeader.fixed #logo>ul>li:first-child>a:after{
+        width:0;
+    }*/
+
+    /*menubar*/
+    /*
+    #mainHeader.fixed #menubar{
+        float:right;
+        width:40%;
+    }
+    #mainHeader.fixed #menubar>ul{
+        overflow:hidden;
+    }
+    #mainHeader.fixed #menubar>ul>li{
+        float:left;
+        width:33.33333333333333%;
+    }
+    #mainHeader.fixed #menubar>ul>li>a{
+        display:block;
+        padding:0 10px;
+    }
+    #mainHeader.fixed #menubar>ul>li>a>img{
+        display:block;
+        width:100%;
+    }*/
+
+    /*mainNav*/
+    /*
+    #mainHeader.fixed #mainNav{
+        display:none;
+    }*/
+
+    /*mainNav-m*/
+    #mainNav-m{
+        position:absolute;
+        left:0;
+        top:0;
+        z-index: 300;
+        background:#dde1e0;
+        width:40%;
+        height:100%;
+        padding:10% 7%;
+        clear: both;
+        display:none;
+    }
+
+    /*close*/
+    #mainNav-m>.close{
+        float:right;
+        margin-bottom:40px;
+        width:10%;
+    }
+    #mainNav-m>.close>a{
+        display:block;
+    }
+    #mainNav-m>.close>a>img{
+        display:block;
+        width:100%;
+    }
+
+    /*h1*/
+    #mainNav-m>h1>a{
+        display:block;
+        font-family: 'Daehan-Bold';
+        font-size:20px;
+        color:black;
+        clear: both;
+        text-decoration: underline;
+    }
+
+    /*login*/
+    #mainNav-m>.login{
+        margin-bottom:50px;
+        margin-top:20px;
+    }
+    #mainNav-m>.login>li>a{
+        display:block;
+        font-size:14px;
+        padding:4px 0;
+        color:rgb(107, 94, 94);
+    }
+
+    /*menu*/
+    #mainNav-m>.menu{
+        margin-bottom:60px;
+    }
+    #mainNav-m>.menu>li>a{
+        display:block;
+        font-size:15px;
+        color:#000;
+        padding:6px 0;
+    }
+    #mainNav-m>.menu>li>ul{
+        display:none;
+        margin-left:8px;
+    }
+    #mainNav-m>.menu>li>ul>li>a{
+        display:block;
+        font-size:14px;
+        color:#000;
+        padding:4px 0;
+    }
+
+    /*sns*/
+    #mainNav-m>.sns>li>a{
+        display:block;
+        font-size:14px;
+        padding:4px 0;
+        color:rgb(107, 94, 94);
+    }
+
+    /*productOne*/
+    #productOne{
+        background:url('../images/mainBanner1.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productTwo*/
+    #productTwo{
+        background:url('../images/mainBanner4.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productThree*/
+    #productThree{
+        background:url('../images/mainBanner3.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    #productFore{
+        background:url('../images/mainBanner2.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*newProduct*/
+    #newProduct{
+        position:relative;
+    }
+    #newProduct>h2{
+        text-align: center;
+        background:url('../images/title_background.png')no-repeat center;
+        background-size:cover;
+    }
+    #newProduct>h2>span{
+        padding:40px 10%;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    /*swiper*/
+    #newProduct .swiper {
+        width: 100%;
+        height:100%;
+    }
+    #newProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #newProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #newProduct .newBox{
+        overflow:hidden;
+    }
+    #newProduct .newBox>.box{
+        float:left;
+        width:50%;
+    }
+    #newProduct .newBox>.newMain{
+        position:relative;
+    }
+    #newProduct .newBox>.newMain>.photo>a{
+        display:block;
+    }
+    #newProduct .newBox>.newMain>.content{
+        display:none;
+    }
+    #newProduct .swiper-button-next:after,
+    #newProduct .swiper-button-prev:after{
+        display:none;
+    }
+    #newProduct .swiper-button-prev{
+        background:url('../images/newarrow_left.png')no-repeat 0 0;
+        width:30px;
+        height:58px;
+        opacity:1;
+        left:30px;
+    }
+    #newProduct .swiper-button-next{
+        width:30px;
+        height:58px;
+        background:url('../images/newarrow_rightt.png')no-repeat 0 0;
+        opacity:1;
+        right:30px;
+    }
+
+    /*bestProduct*/
+    #bestProduct{
+        position:relative;
+    }
+    #bestProduct>h2{
+        text-align: center;
+        background:url('../images/title_background.png')no-repeat center;
+        background-size:cover;
+    }
+    #bestProduct>h2>span{
+        padding:40px 10%;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    #bestProduct .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+    #bestProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    #bestProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #bestProduct .best-swiper .bestBox>a{
+        display:block;
+    }
+    #bestProduct .best-swiper .bestBox>a:hover>img{
+        transform: scale(1.1);
+    }
+    #bestProduct .best-swiper .bestBox>a>img{
+        display:block;
+    }
+
+    /*mainFooter*/
+    #mainFooter{
+        overflow:hidden;
+        margin:30px 0;
+    }
+    #mainFooter>#footerLeft{
+        float:left;
+    }
+    #mainFooter>#footerLeft>ul>li>a{
+        display:block;
+        font-size:14px;
+        color: #000;
+        margin-left:40px;
+        padding:10px 0;
+    }
+    #mainFooter>#footerRight{
+        float:right;
+        margin-right:40px;
+        overflow:hidden;
+    }
+    #mainFooter>#footerRight>form{
+        float:right;
+    }
+    #mainFooter>#footerRight>form>input[type="search"]{
+        border:none;
+        border-bottom:1px solid #000;
+        width:200px;
+        padding:5px 10px;
+    }
+    #mainFooter>#footerRight>form>input[type="image"]{
+        width:20px;
+        vertical-align: middle;
+        margin-left:10px;
+    }
+    #mainFooter>#footerRight>.menu{
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:20px;
+        float:right;
+        clear: both;
+    }
+    #mainFooter>#footerRight>.menu>li{
+        float:left;
+    }
+    #mainFooter>#footerRight>.menu>li>a{
+        padding:0 10px;
+        display:block;
+        font-size:13px;
+        color: #000;
+    }
+    #mainFooter>#footerRight>.menu>li>a:hover{
+        color:rgb(70, 60, 60);
+    }
+    #mainFooter>#footerRight>.menu>li:first-child>a{
+        padding-left:0;
+    }
+    #mainFooter>#footerRight>.info{
+        float:right;
+        clear:both;
+    }
+    #mainFooter>#footerRight>.info>li>a{
+        display:block;
+        font-size:13px;
+        color: rgb(86, 86, 86);
+        line-height: 20px;
+        text-align: right;
+    }
+}
+
+
+
+@media screen and (max-width:767px){
+    #mainHeader{
+        position:fixed;
+        z-index: 100;
+        overflow:hidden;
+        padding: 25px 8% 25px 10%;
+    }
+    #mainHeader.fixed{
+        background:rgba(255, 255, 255, 0.4);
+        
+    }
+
+    /*logo*/
+    #mainHeader #logo{
+        float:left;
+        width:60%;
+    }
+    #mainHeader #logo>h1>a{
+        display:block;
+        font-family: 'RIDIBatang';
+        font-weight: normal;
+        font-size:25px;
+        color:black;
+    }
+    #mainHeader #logo>ul{
+        overflow:hidden;
+    }
+    #mainHeader #logo>ul>li{
+        float:left;
+        position:relative;
+    }
+    #mainHeader #logo>ul>li>a{
+        display:block;
+        font-family: 'GowunDodum-Regular';
+        padding:0 10px;
+        font-size:13px;
+        color:#000;
+    }
+    #mainHeader #logo>ul>li:first-child>a{
+        padding-left:0;
+    }
+    #mainHeader #logo>ul>li>a:after{
+        content:'';
+        position:absolute;
+        left:0;
+        top:5px;
+        background:#000;
+        height:12px;
+        width:1px;
+    }
+    #mainHeader #logo>ul>li:first-child>a:after{
+        width:0;
+    }
+
+    /*menubar*/
+    #mainHeader #menubar{
+        float:right;
+        width:40%;
+        margin-top:5%;
+    }
+    #mainHeader #menubar>ul{
+        overflow:hidden;
+    }
+    #mainHeader #menubar>ul>li{
+        float:left;
+        width:33.33333333333333%;
+    }
+    #mainHeader #menubar>ul>li>a{
+        display:block;
+        padding:0 10px;
+    }
+    #mainHeader #menubar>ul>li>a>img{
+        display:block;
+        width:100%;
+    }
+
+    /*mainNav*/
+    #mainHeader #mainNav{
+        display:none;
+    }
+
+    /*mainNav-m*/
+    #mainNav-m{
+        position:absolute;
+        left:-100%;
+        top:0;
+        z-index: 300;
+        background:#dde1e0;
+        width:40%;
+        height:100%;
+        padding:10% 7%;
+        clear: both;
+        
+    }
+
+    /*close*/
+    #mainNav-m>.close{
+        float:right;
+        margin-bottom:40px;
+        width:10%;
+    }
+    #mainNav-m>.close>a{
+        display:block;
+    }
+    #mainNav-m>.close>a>img{
+        display:block;
+        width:100%;
+    }
+
+    /*h1*/
+    #mainNav-m>h1>a{
+        display:block;
+        font-family: 'Daehan-Bold';
+        font-size:20px;
+        color:black;
+        clear: both;
+        text-decoration: underline;
+    }
+
+    /*login*/
+    #mainNav-m>.login{
+        margin-bottom:50px;
+        margin-top:20px;
+    }
+    #mainNav-m>.login>li>a{
+        display:block;
+        font-size:14px;
+        padding:4px 0;
+        color:rgb(107, 94, 94);
+    }
+
+    /*menu*/
+    #mainNav-m>.menu{
+        margin-bottom:60px;
+    }
+    #mainNav-m>.menu>li>a{
+        display:block;
+        font-size:15px;
+        color:#000;
+        padding:6px 0;
+    }
+    #mainNav-m>.menu>li>ul{
+        display:none;
+        margin-left:8px;
+    }
+    #mainNav-m>.menu>li>ul>li>a{
+        display:block;
+        font-size:14px;
+        color:#000;
+        padding:4px 0;
+    }
+
+    /*sns*/
+    #mainNav-m>.sns>li>a{
+        display:block;
+        font-size:14px;
+        padding:4px 0;
+        color:rgb(107, 94, 94);
+    }
+    
+    /*productOne*/
+    #productOne{
+        background:url('../images/mainBanner1_m.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productTwo*/
+    #productTwo{
+        background:url('../images/mainBanner3_m.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    /*productThree*/
+    #productThree{
+        background:url('../images/mainBanner4_m.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+
+    #productFore{
+        background:url('../images/mainBanner2_m.png')no-repeat center;
+        background-size:cover;
+        height:100%;
+    }
+    
+    /*newProduct*/
+    #newProduct{
+        
+    }
+    #newProduct>h2{
+        text-align: center;
+    }
+    #newProduct>h2>span{
+        padding:30px 10%;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    /*swiper*/
+    #newProduct .swiper {
+        width: 100%;
+        height:100%;
+    }
+    #newProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    #newProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #newProduct .newBox{
+        overflow:hidden;
+    }
+    #newProduct .newBox>.box{
+        width:100%;
+    }
+    #newProduct .newBox>.newMain{
+        position:relative;
+    }
+    #newProduct .newBox>.newMain>.photo>a{
+        display:block;
+    }
+    #newProduct .newBox>.newMain>.content{
+        display:none;
+    }
+    #newProduct .swiper-button-next:after,
+    #newProduct .swiper-button-prev:after{
+        display:none;
+    }
+    #newProduct .swiper-button-prev{
+        background:url('../images/newarrow_left.png')no-repeat 0 0;
+        width:30px;
+        height:58px;
+        opacity:1;
+        left:30px;
+    }
+    #newProduct .swiper-button-next{
+        width:30px;
+        height:58px;
+        background:url('../images/newarrow_rightt.png')no-repeat 0 0;
+        opacity:1;
+        right:30px;
+    }
+
+    /*bestProduct*/
+    #bestProduct{
+    }
+    #bestProduct>h2{
+        text-align: center;
+    }
+    #bestProduct>h2>span{
+        padding:30px 8%;
+        font-family: 'GowunDodum-Regular';
+        font-weight: 800;
+        font-size:35px;
+        display:inline-block;
+    }
+
+    #bestProduct .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+    #bestProduct .swiper-slide {
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    #bestProduct .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    #bestProduct .best-swiper .bestBox>a{
+        display:block;
+    }
+    #bestProduct .best-swiper .bestBox>a>img{
+        display:block;
+    }
+
+    /*mainFooter*/
+    #mainFooter{
+        overflow:hidden;
+        margin:30px 4%;
+    }
+    #mainFooter>#footerLeft{
+        display:none;
+    }
+    #mainFooter>#footerRight{
+        overflow:hidden;
+    }
+    #mainFooter>#footerRight>form{
+        display:none;
+    }
+    #mainFooter>#footerRight>.menu{
+        overflow:hidden;
+        margin-top:30px;
+        margin-bottom:20px;
+        clear: both;
+    }
+    #mainFooter>#footerRight>.menu>li{
+        float:left;
+    }
+    #mainFooter>#footerRight>.menu>li>a{
+        padding:0 5px;
+        display:block;
+        font-size:12px;
+        color: #000;
+    }
+    #mainFooter>#footerRight>.menu>li:first-child>a{
+        padding-left:0;
+    }
+    #mainFooter>#footerRight>.info{
+        clear:both;
+    }
+    #mainFooter>#footerRight>.info>li>a{
+        display:block;
+        font-size:10px;
+        color: rgb(86, 86, 86);
+        line-height: 20px;
+    }
+}
+
+/*
+<section id="mainBanner" class="content">
+        
+    </section>
+    <!--mainBanner end-->
+
+    <section id="productOne" class="content">
+
+    </section>
+    <!--product end-->
+
+    <section id="productTwo" class="content">
+
+    </section>
+    <!--cproduct end-->
+
+    <section id="productThree" class="content">
+
+    </section>
+    <!--product end-->
+    
+    
+    
+    
+    <section id="productOne" class="section">
+
+    </section>
+    <!--product end-->
+
+    <section id="productTwo" class="section">
+
+    </section>
+    <!--cproduct end-->
+
+    <section id="productThree" class="section">
+
+    </section>
+    <!--product end-->
+
+    <section id="productFore" class="section">
+        
+    </section>
+    <!--mainBanner end-->*/
